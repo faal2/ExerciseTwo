@@ -1,4 +1,6 @@
-﻿namespace ExerciseTwo
+﻿using System;
+
+namespace ExerciseTwo
 {
     internal class Program
     {
@@ -27,6 +29,23 @@
                 {
                     case 0:
                         Console.WriteLine("Du har avslutat programmet");
+                        break;
+                    case 1:
+                        Console.WriteLine("Priserna skiljer beroende på ålder. Ange ålder för att se priser.\nSkriv en ålder: ");
+                        if (!int.TryParse(Console.ReadLine(), out int givenAge)) 
+                        {
+                            Console.WriteLine("Felaktig inskrivning. Det måste vara en siffra. ");
+                            break;
+                        }
+                        break;
+                    case 2:
+
+                        break;
+                    case 3:
+
+                        break;
+                    case 4:
+
                         break;
                     default:
                         Console.WriteLine("Felaktig inskrivning. Du har angett ett otillgängligt nummer.");
