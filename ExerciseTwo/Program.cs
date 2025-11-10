@@ -117,8 +117,19 @@ namespace ExerciseTwo
                         Console.WriteLine(addText.ToString());
                         break;
                     case 4:
-
-                        break;
+                        Console.WriteLine("Skriv tre ord eller fler ord, så visas det tredje ordet.\nSkriv: ");
+                        string inputText = Console.ReadLine();
+                        var splitUserText = inputText.Split(' ');
+                        if (splitUserText.Length < 3)
+                        {
+                            Console.WriteLine("Du måste skriva minst tre ord.");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Det tredje ordet är: {splitUserText[2]}");
+                            break;
+                        }
                     default:
                         Console.WriteLine("Felaktig inskrivning. Du har angett ett otillgängligt nummer.");
                         break;
