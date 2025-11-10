@@ -84,7 +84,7 @@ namespace ExerciseTwo
                                 break;
                             }
                             else {
-                                Console.WriteLine("Nu ska du ange¨ålderna på sällskapet. En i taget. Siffran framför kommer visa vilken person detta gäller.");
+                                Console.WriteLine("Nu ska du ange ålderna på sällskapet. En i taget. Siffran framför kommer visa vilken person detta gäller.");
                                 for (int i = 1; i <= userCompanions; i++)
                                 {
                                     Console.Write($"Ålder för person {i}: ");
@@ -97,9 +97,9 @@ namespace ExerciseTwo
                                     {
                                         int companionPrice = priceForAge(companionAge);
                                         totalCost += companionPrice;
-                                        break;
                                     }
                                 }
+                                Console.WriteLine($"Totalkostnaden för biobiljetterna är: {totalCost}kr");
                                 break;
                             }
                                 
