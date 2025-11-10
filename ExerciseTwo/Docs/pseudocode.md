@@ -117,7 +117,9 @@ int priceForAge (int age)
 		return standardPrice
 
 
-			
+
+
+//Create Enum for customers
 
 
 
