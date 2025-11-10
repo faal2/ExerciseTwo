@@ -4,16 +4,16 @@ namespace ExerciseTwo
 {
     internal class Program
     {
+        // Priser för biobiljetter beroende på ålder
+        const int youthPrice = 80;
+        const int seniorPrice = 90;
+        const int standardPrice = 120;
+
+        // Åldersgränser för prisklasser
+        const int youthAgeLimit = 20;
+        const int seniorAgeLimit = 64;
         static void Main(string[] args)
         {
-            // Priser för biobiljetter beroende på ålder
-            const int youthPrice = 80;
-            const int seniorPrice = 90;
-            const int standardPrice = 120;
-
-            // Åldersgränser för prisklasser
-            const int youthAgeLimit = 20;
-            const int seniorAgeLimit = 64;
 
             Console.Write("""
             Välkommen till huvudmenyn.
@@ -62,5 +62,17 @@ namespace ExerciseTwo
                 }
             }
         }
+    public int priceForAge(int age)
+    {
+        if (age < youthAgeLimit)
+            return youthPrice;
+        else if (age > seniorAgeLimit)
+
+            return seniorPrice;
+
+        else
+            return standardPrice;
+
+    }
     }
 }
