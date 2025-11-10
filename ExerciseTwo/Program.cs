@@ -16,6 +16,11 @@
 
             Skriv en siffra:  
             """);
+
+            if (!int.TryParse(Console.ReadLine(), out int userNumber))
+            {
+                Console.WriteLine("Felaktig inskrivning. Det måste vara en siffra. ");
+            }
         }
     }
 }
