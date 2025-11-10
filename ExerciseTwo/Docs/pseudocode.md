@@ -9,6 +9,9 @@ const int youthPrice = 80
 const int seniorPrice = 90
 const int standardPrice = 120
 
+const int youthAgeLimit = 20
+const int seniorAgeLimit = 64
+
 bool caseTwoWays = random. bool
 
 continueIteation = true
@@ -109,17 +112,14 @@ if (!int.TryParse(Console.ReadLine(), out int userNumber))
 
 
 int priceForAge (int age)
-	if age < 20
+	if age < youthAgeLimit
 		return youthPrice
-	else if age > 64
+	else if age > seniorAgeLimit
 		return seniorPrice
 	else
 		return standardPrice
 
 
-
-
-//Create Enum for customers
 
 
 
