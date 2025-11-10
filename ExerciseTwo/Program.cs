@@ -99,7 +99,7 @@ namespace ExerciseTwo
                                         totalCost += companionPrice;
                                     }
                                 }
-                                Console.WriteLine($"Totalkostnaden för biobiljetterna är: {totalCost}kr");
+                                Console.WriteLine($"Totalkostnaden för hela sällskapet: {totalCost}kr");
                                 break;
                             }
                                 
