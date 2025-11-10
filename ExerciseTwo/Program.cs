@@ -46,7 +46,28 @@ namespace ExerciseTwo
                             Console.WriteLine("Felaktig inskrivning. Det måste vara en siffra. ");
                             break;
                         }
-                        break;
+                        else
+                        {
+                            int price = priceForAge(givenAge);
+                            if (price == youthPrice)
+                            {
+                                Console.WriteLine("Ungdomspris: {price}kr");
+                                break;
+                            } 
+                            else
+                            {
+                                if (price == seniorPrice)
+                                {
+                                    Console.WriteLine(" Pensionärspris: {price}kr");
+                                    break;
+                                }
+                                else
+                                {
+                                    Console.WriteLine(" Standardpris: {price}kr");
+                                    break;
+                                }
+                            }
+                        }
                     case 2:
 
                         break;
@@ -62,7 +83,7 @@ namespace ExerciseTwo
                 }
             }
         }
-    public int priceForAge(int age)
+    public static int priceForAge(int age)
     {
         if (age < youthAgeLimit)
             return youthPrice;
