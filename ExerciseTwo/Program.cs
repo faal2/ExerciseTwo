@@ -51,19 +51,19 @@ namespace ExerciseTwo
                             int price = priceForAge(givenAge);
                             if (price == youthPrice)
                             {
-                                Console.WriteLine("Ungdomspris: {price}kr");
+                                Console.WriteLine($"Ungdomspris: {price}kr");
                                 break;
                             } 
                             else
                             {
                                 if (price == seniorPrice)
                                 {
-                                    Console.WriteLine(" Pensionärspris: {price}kr");
+                                    Console.WriteLine($"Pensionärspris: {price}kr");
                                     break;
                                 }
                                 else
                                 {
-                                    Console.WriteLine(" Standardpris: {price}kr");
+                                    Console.WriteLine($"Standardpris: {price}kr");
                                     break;
                                 }
                             }
