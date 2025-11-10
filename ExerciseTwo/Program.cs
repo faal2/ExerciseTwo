@@ -6,6 +6,15 @@ namespace ExerciseTwo
     {
         static void Main(string[] args)
         {
+            // Priser för biobiljetter beroende på ålder
+            const int youthPrice = 80;
+            const int seniorPrice = 90;
+            const int standardPrice = 120;
+
+            // Åldersgränser för prisklasser
+            const int youthAgeLimit = 20;
+            const int seniorAgeLimit = 64;
+
             Console.Write("""
             Välkommen till huvudmenyn.
             Här har du följande handlingar du kan utföra. Du interagerar genom att skriva in siffran till det alternativ du vill göra:
