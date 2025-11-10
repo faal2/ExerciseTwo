@@ -69,8 +69,41 @@ namespace ExerciseTwo
                             }
                         }
                     case 2:
-
-                        break;
+                        int totalCost = 0;
+                        Console.WriteLine("Hur många i sällskap har du?");
+                        if (!int.TryParse(Console.ReadLine(), out int userCompanions))
+                        {
+                            Console.WriteLine("Felaktig inskrivning. Det måste vara en siffra. ");
+                            break;
+                        }
+                        else
+                        {
+                            if (userCompanions < 1)
+                            {
+                                Console.WriteLine("Du måste ha minst ett sällskap.");
+                                break;
+                            }
+                            else {
+                                Console.WriteLine("Nu ska du ange¨ålderna på sällskapet. En i taget. Siffran framför kommer visa vilken person detta gäller.");
+                                for (int i = 1; i <= userCompanions; i++)
+                                {
+                                    Console.Write($"Ålder för person {i}: ");
+                                    if (!int.TryParse(Console.ReadLine(), out int companionAge))
+                                    {
+                                        Console.WriteLine("Felaktig inskrivning. Det måste vara en siffra. ");
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        int companionPrice = priceForAge(companionAge);
+                                        totalCost += companionPrice;
+                                        break;
+                                    }
+                                }
+                                break;
+                            }
+                                
+                        }
                     case 3:
 
                         break;
