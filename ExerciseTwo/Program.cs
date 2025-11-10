@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace ExerciseTwo
 {
@@ -105,7 +106,14 @@ namespace ExerciseTwo
                                 
                         }
                     case 3:
-
+                        Console.WriteLine("Skriv in en text som ska repeteras 10 gånger: ");
+                        string userText = Console.ReadLine();
+                        StringBuilder addText = new StringBuilder();
+                        for (int i = 1; i <= 10; i++)
+                        {
+                            addText.Append($" {i}.{userText},");
+                        }
+                        Console.WriteLine(addText.ToString());
                         break;
                     case 4:
 
