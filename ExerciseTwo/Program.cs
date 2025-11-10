@@ -21,6 +21,18 @@
             {
                 Console.WriteLine("Felaktig inskrivning. Det måste vara en siffra. ");
             }
+            else 
+            {
+                switch (userNumber)
+                {
+                    case 0:
+                        Console.WriteLine("Du har avslutat programmet");
+                        break;
+                    default:
+                        Console.WriteLine("Felaktig inskrivning. Du har angett ett otillgängligt nummer.");
+                        break;
+                }
+            }
         }
     }
 }
