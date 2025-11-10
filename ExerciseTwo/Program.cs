@@ -108,6 +108,7 @@ namespace ExerciseTwo
                     case 3:
                         Console.WriteLine("Skriv in en text som ska repeteras 10 gånger: ");
                         string userText = Console.ReadLine();
+                        // Använder StringBuilder för att effektivt bygga upp den repeterade texten
                         StringBuilder addText = new StringBuilder();
                         for (int i = 1; i <= 10; i++)
                         {
